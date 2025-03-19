@@ -1,15 +1,14 @@
-import { FlatList, SafeAreaView, View, Text,  StyleSheet, Dimensions } from 'react-native';
-
+import React from "react";
+import { FlatList, SafeAreaView, View, Text, StyleSheet, Dimensions } from "react-native"; 
+import Card from "../componentes/card"; 
 import Header from "../componentes/Header";
-import Card from "./componentes/Card";
 
-export default function HomeScreen() {
-
+export default function HomeScreen({ navigation }) {
     const professores = [
-        { id: "1", name: "Marcelo", role: "Professor"},
-        { id: "2", name: "Thiago", role: "Professor"},
-        { id: "3", name: "Edu", role: "Professor"},
-        { id: "4", name: "Felipe", role: "Professor"},
+        { id: "1", name: "Marcello", role: "Professor" },
+        { id: "2", name: "Thiago", role: "Professor" },
+        { id: "3", name: "Edu", role: "Professor" },
+        { id: "4", name: "Felipe", role: "Professor" },
     ];
 
     const alunos = [
